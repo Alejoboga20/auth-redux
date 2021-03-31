@@ -5,3 +5,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Create a firebase project and config for web app.
 - Include config file in ./src/firebase.js
 - Add libraries for firebase and firebase-tools
+- Go to firebase and enable google auth backend (Authentication section in firebase console)
