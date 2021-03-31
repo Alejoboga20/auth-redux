@@ -10,10 +10,10 @@ import {
 } from './features/userSlice';
 import './App.css';
 
-function App() {
-  const dispatch = useDispatch();
+const App = () => {
   const userName = useSelector(selectUserName);
   const userEmail = useSelector(selectUserEmail);
+  const dispatch = useDispatch();
 
   const handleSignIn = () => {
     auth
@@ -33,7 +33,7 @@ function App() {
     auth
       .signOut()
       .then(() => {
-        dispatch(setUserLogOutState);
+        dispatch(setUserLogOutState());
       })
       .catch((err) => alert(err.message));
   };
@@ -50,6 +50,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
